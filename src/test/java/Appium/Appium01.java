@@ -17,6 +17,10 @@ public class Appium01 {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "R68T5005LRM");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\zeynepsümeyye\\IdeaProjects\\mobilTest\\src\\Apps\\gestureTool.apk");
+        capabilities.setCapability(MobileCapabilityType.NO_RESET,true);
+
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,60);
+
         capabilities.setCapability("appPackage", "com.davemac327.gesture.tool");
         capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
 
