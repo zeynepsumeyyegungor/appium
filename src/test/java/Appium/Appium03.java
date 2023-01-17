@@ -48,8 +48,5 @@ public class Appium03 {
 
         System.out.println("Test screen acildi...");
 
-
-
     }
-
 }
