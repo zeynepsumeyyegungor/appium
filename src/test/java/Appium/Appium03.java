@@ -21,7 +21,7 @@ public class Appium03 {
         //capabilities.setCapability(CapabilityType.PLATFORM_NAME,"Andrid");
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // deviceName Andrid'te onemli degil
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         //capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\ahmee\\IdeaProjects\\Mobile_Testing_Appium\\src\\Apps\\gestureTool.apk");

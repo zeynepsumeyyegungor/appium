@@ -17,14 +17,14 @@ public class Appium04Gesture {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // deviceName Andrid'te onemli degil
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        //capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\ahmee\\IdeaProjects\\Mobile_Testing_Appium\\src\\Apps\\gestureTool.apk");
-        capabilities.setCapability("appPackage", "com.davemac327.gesture.tool");
-        capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
-        capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
-        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
+        //capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\zeynepsümeyye\\IdeaProjects\\mobilTest\\src\\Apps\\gestureTool.apk");
+       capabilities.setCapability("appPackage", "com.davemac327.gesture.tool");
+       capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
+       capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
+       // capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
@@ -54,11 +54,11 @@ public class Appium04Gesture {
         MobileElement doneButton = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[1]");
         doneButton.click();
 
-        Thread.sleep(1500);
+        Thread.sleep(3000);
         MobileElement firstGesture = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.TextView[2]");
         actions.clickAndHold(firstGesture).perform();
 
-        Thread.sleep(1500);
+        Thread.sleep(3000);
         MobileElement deleteButton = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView");
         deleteButton.click();
 
